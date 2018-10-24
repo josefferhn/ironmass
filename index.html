@@ -7,13 +7,33 @@
 
 <link href="css/bootstrap.min.css" rel="stylesheet">
 <link href="css/bootstrap-custom.css" rel="stylesheet">
+<link href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" rel="stylesheet">
+<link href="css/jquery.fancybox.min.css" rel="stylesheet">
+<link href="css/owl.carousel.min.css" rel="stylesheet">
+<link href="css/animate.css" rel="stylesheet">
 <link href="css/style.css" rel="stylesheet">
 	
 </head>
 
 <body>
 	
-	<header>
+	
+	
+	
+	<section id="sec-slides" class="d-none">
+		<div class="container">
+			
+			<hr class="barra">
+			<h2>Brace your body…</h2>
+			<h1>For the World<br> of Fitness!</h1>
+			<p><a href="#" class="btn btn-light btn-naranja">View the classes</a></p>
+			
+		</div>		
+	</section>
+	
+	<section id="sec-carousel">
+		
+		<header class="header-area">
 		<div class="container">
 			
 			
@@ -32,7 +52,7 @@
 					<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
 				  </li>
 				  <li class="nav-item">
-					<a class="nav-link" href="#">About us</a>
+					<a class="nav-link" href="#sec-coaches">About us</a>
 				  </li>
 				  <li class="nav-item">
 					<a class="nav-link" href="#">Schedule</a>
@@ -58,20 +78,9 @@
 			
 		</div>
 	</header>
-	
-	
-	<section id="sec-slides" class="d-none">
-		<div class="container">
-			
-			<hr class="barra">
-			<h2>Brace your body…</h2>
-			<h1>For the World<br> of Fitness!</h1>
-			<p><a href="#" class="btn btn-light btn-naranja">View the classes</a></p>
-			
-		</div>		
-	</section>
-	
-	<section id="sec-carousel">
+		
+		
+		
 		<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
 		  <ol class="carousel-indicators">
 			<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -87,8 +96,8 @@
 			<div class="caption-center">
 				<hr class="barra">
 				<h2>Brace your body…</h2>
-				<h1>For the World<br> of Fitness!</h1>
-				<p><a href="#" class="btn btn-light btn-naranja">View the classes</a></p>
+				<h1 class="d-none d-sm-block">For the World<br> of Fitness!</h1>
+				<p><a href="#" class="btn btn-light btn-naranja btn-negro">View the classes</a></p>
 			</div>
 			
 		</article>
@@ -119,10 +128,10 @@
 				
 				<article class="col-md-6 col-sm-6 col-xs-12">
 					
-					<hr class="barra barra-izquierda">
-					<h2 class="titulo">Fitness is the Answer…</h2>
-					<h3>...whenever the question is your physical shape!</h3>
-					<p>With a notion that fitness activities are not just mere 3 times a week routine, but rather a day-to-day lifestyle, we have opened a first of our fitness centers in the city… When we were asking ourselves, whether we would be able to offer something different to what other fitness studios offer, we found the answer. It was a skilled team of trainers!</p>
+					<hr class="barra barra-izquierda wow fadeIn" data-wow-delay="0s">
+					<h2 class="titulo wow bounceInLeft" data-wow-delay="1s">Fitness is the Answer…</h2>
+					<h3 class="wow bounceInUp" data-wow-delay="1.5s">...whenever the question is your physical shape!</h3>
+					<p class="wow bounceInLeft" data-wow-delay="2s">With a notion that fitness activities are not just mere 3 times a week routine, but rather a day-to-day lifestyle, we have opened a first of our fitness centers in the city… When we were asking ourselves, whether we would be able to offer something different to what other fitness studios offer, we found the answer. It was a skilled team of trainers!</p>
 					<p class="firma-amanda">— Amanda Smith</p>
 					
 				</article>
@@ -179,7 +188,7 @@
 	</section>
 	
 	
-	<section id="sec-mood">
+	<section id="sec-mood" class="d-block d-md-none">
 		<div class="container">
 			
 			<hr class="barra">
@@ -243,6 +252,91 @@
 		</div>
 	</section>
 	
+	<section id="sec-testimonials" class="espaciado">
+		<div class="container">
+			
+			<hr class="barra">
+			<h2 class="titulo text-center">Testimonials</h2>
+			
+			<div class="app-carousel owl-carousel">
+				
+				<div class="single-shot">
+					<img src="img/testimonials-01.jpg" class="img-fluid rounded-circle">
+					<h4>Amazing !</h4>
+					<p>Though I’m just in the middle of my first fitness “semester”, I am officially excited about how re-energizing and revitalizing this whole workout thing is!</p>
+					<h5>Alison Winnergate</h5>
+				</div>
+				
+				<div class="single-shot">
+					<img src="img/testimonials-02.jpg" class="img-fluid rounded-circle">
+					<h4>Inspiring !</h4>
+					<p>Before I was referred here by my old good friend Janette, I never considered the fitness workouts routine to be so efficient. Now, my body proves me wrong!</p>
+					<h5>Emma Smith</h5>
+				</div>
+				
+				<div class="single-shot">
+					<img src="img/testimonials-03.jpg" class="img-fluid rounded-circle">
+					<h4>Incredible !</h4>
+					<p>I am amazed at how quick are the first results, all of which I sincerely attribute to my newly found love for these fitness workouts! I lost some weight and I feel amazing!</p>
+					<h5>Jim Stone</h5>
+				</div>
+				
+			</div>
+			
+		</div>
+	</section>
+	
+	<section id="sec-galley">
+		<div class="container-fluid">
+			
+			<div class="row no-gutters">
+				
+				<article class="col-md-3 col-sm-6 col-xs-12">
+					
+					<a href="img/slide-01.jpg" data-fancybox="galeria"><img src="img/fitness-01.jpg" class="img-fluid"></a>
+						
+				</article>
+				
+				<article class="col-md-3 col-sm-6 col-xs-12">
+					<div class="info-clase">
+						<img src="img/fitness-02.jpg" class="img-fluid">
+						
+						<div class="info-texto">
+							<h3>
+								<a href="img/fitness-02.jpg" data-fancybox="galeria"><i class="far fa-image"></i></a></h3>
+						</div>
+						
+					</div>
+				</article>
+				
+				<article class="col-md-3 col-sm-6 col-xs-12">
+					<div class="info-clase">
+						<img src="img/fitness-03.jpg" class="img-fluid">
+						
+						<div class="info-texto">
+							<h3>
+								<a href="https://youtu.be/F1B9Fk_SgI0" data-fancybox><i class="fas fa-video"></i></a></h3>
+						</div>
+						
+					</div>
+				</article>
+				
+				<article class="col-md-3 col-sm-6 col-xs-12">
+					<div class="info-clase">
+						<img src="img/fitness-01.jpg" class="img-fluid">
+						
+						<div class="info-texto">
+							<h3>
+								<a href="#" data-src="#banner" data-fancybox><i class="fas fa-file"></i></a></h3>
+						</div>
+						
+					</div>
+				</article>
+			</div>
+			
+			
+		</div>
+	</section>
 	
 	<footer>
 		<div class="container">
@@ -252,7 +346,7 @@
 			</h3>
 			
 			<ul class="redes">
-				<li><a href="#">FB</a></li>
+				<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
 				<li><a href="#">T</a></li>
 				<li><a href="#">In</a></li>
 				<li><a href="#">You</a></li>
@@ -264,13 +358,103 @@
 	</footer>
 	
 	
+	<section id="banner" class="ocultar">
+		<div class="container">
+			
+			<h2>Banner</h2>
+			<p>I initially took on CrossFit trainings after a spending a lifetime in professional athletics. The fact that I loved sports so much contributed a lot to my decision.</p>
+			
+		</div>		
+	</section>
 	
 	
 	
 	<script src="js/jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.fancybox.min.js"></script>
+	<script src="js/wow.min.js"></script>
+	<script>
+  		new WOW().init();
+  	</script>
+	<script src="js/jquery.easing.min.js"></script>
+	<script src="js/jquery.nav.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script>
+		$(function(){
+			
+			$(window).on('scroll', function () {
+                if ($(window).scrollTop() > 48) {
+                    $('.header-area').addClass('sticky');
+                } else {
+                    $('.header-area').removeClass('sticky');
+                }
+        	});
+			
+			$('#navbar').onePageNav({
+                currentClass: 'active',
+                scrollSpeed: 2000,
+                easing: 'easeOutQuad'
+        	});
+			
+			
+			$(window).load(function () {
+                enableBackToTop();
+            });
+           
+            function enableBackToTop() {
+                var backToTop = $('<a>', { class: 'back-to-top' });
+                backToTop.appendTo('body');
+
+                backToTop.hide();
+
+                $(window).scroll(function () {
+                    if ($(this).scrollTop() != 0) {
+                        backToTop.fadeIn ();
+                    } else {
+                        backToTop.fadeOut ();
+                    }
+                });
+
+                backToTop.click (function (e) {
+                    e.preventDefault ();
+
+                    $('body, html').animate({
+                        scrollTop: 0
+                    }, 300);
+                });
+            }//enableBackToTop
+			
+			
+			$(".app-carousel").owlCarousel({
+				items: 1,
+				loop: true,
+				autoplay: true,
+				smartSpeed: 800,
+				margin: 30,
+				center: true,
+				dots: true,
+				responsive: {
+					0: {
+						items: 1
+					},
+					480: {
+						items: 2
+					},
+					992: {
+						items: 3
+					}
+				}
+			});
+
+			
+		});
+		
+	</script>
 	
-	<!-- Global site tag (gtag.js) - Google Analytics -->
+	
+	
+	
+	
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-125133098-1"></script>
 <script>
   window.dataLayer = window.dataLayer || [];

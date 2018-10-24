@@ -152,7 +152,8 @@ p{
 
 
 #sec-classes .padre,
-#sec-classes .info-clase{
+#sec-classes .info-clase,
+.info-clase{
 	position: relative;
 }
 
@@ -170,7 +171,8 @@ p{
 	font-weight: 600;
 }
 
-#sec-classes .info-texto{
+#sec-classes .info-texto,
+.info-texto{
 	position: absolute;
 	width: 100%;
 	height: 100%;
@@ -188,11 +190,15 @@ p{
 	color: #fff;
 	font-weight: 600;
 }
-#sec-classes .info-clase:hover .info-texto{
+#sec-classes .info-clase:hover .info-texto,
+.info-clase:hover .info-texto
+{
 	opacity: 1;
 	transition: all ease-in-out 0.5s;
 }
-
+.info-texto a{
+	color: #fff;
+}
 
 #sec-classes .overlay{
 	position: relative;
@@ -270,10 +276,134 @@ footer p a:hover{
 	color: #f54f15;
 }
 
+.ocultar{
+	display: none;
+}
+
+
+.header-area.sticky {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    height: auto;
+    position: fixed;
+    top: 0;
+    z-index: 9999;
+}
+.header-area.sticky{
+    background-color: #252525 !important;
+}
 
 
 
 
+
+.back-to-top {
+    text-align: center;
+    background: rgba(0,0,0,0.40);
+    color: #fff;
+    display: none;
+    width: 40px; height: 40px; line-height: 40px;
+    font-family: "Font Awesome 5 Free";
+    font-size: 35px;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    cursor: pointer;
+    z-index: 9999;
+}
+.back-to-top:hover {
+    opacity: 1;
+}
+.back-to-top::before{
+    content: "\f106";
+}
+
+
+
+/* Diseño Móvil (xs) */
+@media (max-width:480px){
+	.btn-naranja{
+		padding:5px 10px;
+		font-size: 14px;
+	}
+	#sec-carousel .caption-center h2{
+		font-size: 24px;
+	}
+	
+	.btn-negro{
+		background-color: rgba(0,0,0,0.76);
+		color: #fff;
+	}
+	
+}
+
+/* Diseño Tableta y Móvil (xs y sm)*/
+@media (max-width:768px){
+	#sec-classes .info-texto{
+		opacity: 1;
+	}
+	#sec-classes article,
+	#sec-gallery article{
+		margin-top: 10px;
+	}
+}
+
+
+/* Diseño Tableta (sm)*/
+@media (min-width:480px) and (max-width:768px){
+	
+	
+}
+
+
+
+.app-carousel {
+    padding: 0 6%;
+	margin-top: 50px;
+}
+.app-carousel .center .single-shot {
+    opacity: 1;
+    transform: scale(1);
+}
+.app-carousel .single-shot {
+    opacity: 0.8;
+    transform: scale(0.8);
+}
+
+.app-carousel .owl-dots {
+    text-align: center;
+}
+.app-carousel .owl-dot {
+    height: 11px;
+    width: 11px;
+    border: 2px solid #a49fba !important;
+    border-radius: 50%;
+    margin: 35px 6px;
+}
+.app-carousel .owl-dot.active {
+    background-color: #fb397d;
+    border: 0 !important;
+}
+.owl-carousel .owl-item img{
+	width: inherit;
+}
+.app-carousel h4{
+	color: #f54f15;
+	font-weight: 600;
+}
+.app-carousel h5{
+	color: #000;
+	font-weight: 600;
+	font-size: 15px;
+}
+
+
+
+#sec-carousel{
+	position: relative;
+}
 
 
 

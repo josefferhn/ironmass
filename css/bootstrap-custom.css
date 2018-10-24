@@ -1,7 +1,15 @@
 a{
 	outline:0 !important;	
 }
+header{
+	position: absolute;
+	top: 0;
+	z-index: 9999;
+	width: 100%;
+	background-color: transparent !important;
+}
 .navbar-light {
+	
 	background-color:transparent!important;
 	font-size:14px;	
 }
